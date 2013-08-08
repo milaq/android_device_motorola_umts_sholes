@@ -572,12 +572,12 @@ service iprenew_rmnet0 /system/bin/dhcpcd -n
     disabled
     oneshot
 
-service hciattach /system/bin/hciattach \
-    -n -t 10 /dev/ttyS1 texasalt 3000000 flow
-    class post-zygote_services
-    user bluetooth
-    group bluetooth net_bt_admin
-    disabled
+#service hciattach /system/bin/hciattach \
+#    -n -t 10 /dev/ttyS1 texasalt 3000000 flow
+#    class post-zygote_services
+#    user bluetooth
+#    group bluetooth net_bt_admin
+#    disabled
 
 on property:hw.dspbridge.needs_recovery=1
     start baseimage

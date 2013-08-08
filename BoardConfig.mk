@@ -33,6 +33,7 @@ TARGET_NO_RADIOIMAGE := true
 
 TARGET_BOARD_PLATFORM := omap3
 
+TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
@@ -101,6 +102,7 @@ BOARD_USE_FROYO_LIBCAMERA := true
 
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/motorola/umts_sholes/bluetooth
 
 BOARD_EGL_CFG := device/motorola/umts_sholes/egl.cfg
 
